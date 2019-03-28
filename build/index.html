@@ -2,16 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gulp Start</title>
+    <title>Prechu</title>
     <link rel="stylesheet" href="./../css/styles.css">
     <link rel="stylesheet" href="./../css/style.scss">
+    <link rel="stylesheet" href="./../css/header.scss">
+    <link rel="stylesheet" href="./../css/slider.scss">
+    <link rel="stylesheet" href="./../css/popular.scss">
+    <link rel="stylesheet" href="./../css/bottomContent.scss">
+    <link rel="stylesheet" href="./../css/footer.scss">
 </head>
 <body>
-    <section>
-        <div class="wrapper">
-            <div class="main">Main</div>
+    <header>
+        <section class ="header">
+                <a href="#"> <div class="logo">
+                    <img src="../img/logo.png" alt="logo" class="img-logo">
+                    <div class="logo-text">Prechu</div>
+                </div>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="active" onclick="isActive(this.id)" id="nav-1"><a href="#">Home</a></li>
+                    <li onclick="isActive(this.id)" id="nav-2"><a href="#">Products</a></li>
+                    <li onclick="isActive(this.id)" id="nav-3"><a href="#">Services</a></li>
+                    <li onclick="isActive(this.id)" id="nav-4"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section class = "slider">
+        <div class="slides">
+            <div class="slide-background">
+                <img src="./../img/slider-background.png" alt="first slide">
+            </div>
+            <div class="iphone">
+                <img src="../img/iphone.png" alt="iphone">
+                <div class="title">Lorem Ipsum is simply</div>
+                <div class="content">dummy text of the printing & typesetting</div>
+                <button class="sign-up"><a href="#"><img src="../img/check-mark.png" alt="check-mark"><span>Sign up now</span></a></button>
+            </div>
         </div>
+        <div class="slides">
+            <div class="slide-background">
+                <img src="./../img/picture2.jpeg" alt="second slide">
+            </div>
+        </div>
+        <div class="slides">
+            <div class="slide-background">
+                <img src="./../img/picture3.jpeg" alt="third slide">
+            </div>
+        </div>
+    
+        <a class="prev" onclick="changeSlide(-1)"><img src="./../img/arrow.png" alt="left arrow"></a>
+        <a class="next" onclick="changeSlide(1)"><img src="./../img/arrow.png" alt="right arrow"></a>
     </section>
-<script type="text/javascript" src="./js/main.js"></script>
+    <section class="popular">
+        <div class="popular-wrapper">
+            <div class="popular-box">
+                <div class="img-wrapper">
+                    <img src="../img/pencil.png" alt="pencil">
+                </div>
+                <div class="box-title">Contrary to popular</div>
+                <div class="box-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cupiditate ratione vero, voluptate. </div>
+            </div>
+            <div class="popular-box">
+                <div class="img-wrapper">
+                    <img src="../img/screen.png" alt="screen">
+                </div>
+                <div class="box-title">Contrary to popular</div>
+                <div class="box-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cupiditate ratione vero, voluptate. </div>
+            </div>
+            <div class="popular-box">
+                <div class="img-wrapper">
+                    <img src="../img/basket.png" alt="basket">
+                </div>
+                <div class="box-title">Contrary to popular</div>
+                <div class="box-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae cupiditate ratione vero, voluptate. </div>
+            </div>
+        </div>
+    
+    </section>
+    <section class = "bottomContent">
+       <div class="bottom-content-wrapper">
+           <div class="left-bottom-content">
+               <h2 class="title">The Shopping cart</h2>
+               <div class="img-wrapper">
+                   <img src="../img/cart.png" alt="cart">
+               </div>
+           </div>
+           <div class="right-bottom-content">
+               <div class="title">Some Bullet text here</div>
+               <div class="content">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam molestiae obcaecati perspiciatis quos sapiente tenetur voluptatibus! Architecto eos, est illo iste nobis odio quam quia reiciendis reprehenderit, sequi vero?
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ipsam molestiae obcaecati perspiciatis quos sapiente tenetur voluptatibus! Architecto eos, est illo iste nobis odio quam quia reiciendis reprehenderit, sequi vero?
+               </div>
+           </div>
+       </div>
+    </section>
+    <footer>
+        <section class="footer">
+            <div class="footer-wrapper">
+                Copyright &copy 2012 - 2013 cssauthor.com
+            </div>
+        </section>
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

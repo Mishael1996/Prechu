@@ -1,0 +1,38 @@
+$blue: #5094f2;
+$grey: #9f9f9f;
+.popular-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 350px;
+  .popular-box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      img {
+        display: flex;
+        justify-content: center;
+        width: 175px;
+        height: 175px;
+      }
+    }
+    .box-title {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 20px;
+      color: $blue;
+    }
+    .box-content {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 15px;
+      color: $grey;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+$grey: #919191;
+$blue: #5094f2;
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    display: inline-block;
+    margin-left: 120px;
+    width: 180px;
+    color: black;
+    .logo-text {
+      position: relative;
+      top: -6px;
+      text-decoration:none;
+      display: inline-block;
+      margin-top: 16px;
+      margin-left: 3px;
+      width: 119px;
+      font-family: "wf_SegoeUILight";
+      font-weight: lighter;
+      font-size: 42px;
+      letter-spacing: 0.42px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    margin-top: 35px;
+    margin-right: 160px;
+    li {
+      margin-right: 34px;
+      padding-bottom: 12px;
+      list-style-type: none;
+      &:hover {
+        transition: 200ms;
+        padding-bottom: 12px;
+        border-bottom: 3px solid $blue;
+      }
+      a {
+        color: $grey;
+        font-size: 22px;
+        font-family: "wf_SegoeUILight";
+        text-decoration: none;
+      }
+    }
+    .active {
+      transition: 300ms;
+      border-bottom: 3px solid $blue;
+    }
+  }
+}
